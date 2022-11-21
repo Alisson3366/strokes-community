@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    background: linear-gradient(60deg, #10085a 40%, #3019b0 80%);   
+}
+/*-----------------------------------------------------------------------------------------*/
+
+.cabecalho {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 12px;
+}
+
+.cabecalho-logo {
+    height: 100px;
+    background-color: white;
+}
+
+.cabecalho-menu {
+    display: flex;
+    gap: 36px;
+}
+
+.cabecalho-menu-item {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.cabecalho-menu-item:hover {
+    color: #bc041c;
+}
+/*-----------------------------------------------------------------------------------------*/
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 2px solid #bc041c;
+    padding: 24px 0 36px 0;
+}
+
+.conteudo-titulo {
+    padding: 24px;
+    font-family: 'Montserrat', sans-serif;
+    border-bottom: 4px solid #bc041c;
+    width: fit-content;
+    font-weight: 700;
+    font-size: 36px;
+    color: #bc041c;
+}
+
+.conteudo-paragrafo {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+    padding: 24px;
+}
+
+.grupo:before, .grupo:after {
+    display: table;
+}
+
+.grupo:after {
+    clear: both;
+}
+
+.conteudo-formulario {
+    background-color: #bc041c;
+    padding: 24px;
+    border: 6px solid white;
+    box-shadow: 8px 8px black;
+}
+
+input {
+    padding: 12px;
+    border: none;
+    border-radius: 15px;
+    width: auto;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.formulario-campo #dtdata {
+    width: 240px;
+    height: 50px;
+}
+
+textarea {
+    padding: 12px;
+    border: none;
+    border-radius: 15px;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.formulario {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 60px;
+    border: none;
+}
+
+
+.formulario-campo {
+    margin-bottom: 12px;
+}
+
+.formulario-campo label {
+    display: inline-block;
+    margin-bottom: 12px;
+    color: white;
+}
+
+.formulario-campo input[type="text"],
+.formulario-campo input[type="number"],
+.formulario-campo input[type="email"],
+.formulario-campo input[type="date"],
+.formulario-campo input[type="password"],
+.formulario-campo input[type="tel"],
+.formulario-campo textarea {
+    display: block;
+    border: 2px solid black;
+    box-shadow: 2px 2px black;
+}
+
+.formulario-campo input:focus, .formulario-campo textarea:focus {
+    background-color: #301da1;
+    color: white;
+}
+
+.formulario-botao {
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: black;
+    width: 180px;
+    height: 80px;
+    border: none;
+    box-shadow: 8px 10px black;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 12px;
+}
+
+.formulario-botao:hover {
+    background-color: #301da1;
+    color: white;
+}
+/*-----------------------------------------------------------------------------------------*/
+
+.rodape {
+    padding: 12px;
+    background-color: #bc041c;
+    border-top: 2px solid white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.rodape-imagem {
+    height: 100px;
+}
+
+.rodape-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    background-color: rgb(255, 255, 255, 0.9);
+    padding: 12px;
+    border: none;
+    box-shadow: 8px 10px black;
+    border-radius: 20px;
+}
+
+.rodape-menu-icone {
+    height: 48px;
+}
+
+.rodape-menu-item1:hover {
+    fill: #E4405F;
+}
+.rodape-menu-item2:hover {
+    fill: #1877F2;
+}
+.rodape-menu-item3:hover {
+    fill: #1DA1F2;
+}
+.rodape-menu-item4:hover {
+    fill: #FF0000;
+}
+.rodape-menu-item5:hover {
+    fill: #1DB954;
+}
